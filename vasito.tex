@@ -80,14 +80,21 @@
 \section{Math}
 \subsection{Identities}
 {
+
+$\binom{n}{k} = \frac{n!}{(n-k)!k!} = $\binom{n-1}{k-1}+$\binom{n-1}{k}$
+$C_n$ counts the number of expressions containing $n$ pairs of parentheses which are correctly matched
+$C_n$ is the number of different ways $n+1$ factors can be completely parenthesized ${(((ab)c)d),(a(bc))d,...}$. Ex: number of full binary trees $n+1$ leaves
 $C_n = \frac{2(2n-1)}{n+1} C_{n-1}$
 
 $C_n = \frac{1}{n+1} \binom{2n}{n}$
 
 $C_n \sim \frac{4^n}{n^{3/2}\sqrt{\pi}}$
 
+$S_{n,k}$ Formas de partir un conjunto de $n$ elementos en $k$ conjuntos
+$\forall n\geq1S_{n,1}=1, \forall n>1 S_{1,k}=0, S_{n,k}=k*S_{n-1,k}+S_{n-1,k-1}$
 $\sigma(n) = O(\log(\log(n)))$ (number of divisors of $n$)
 
+$F_{n}$ Fibonacci
 $F_{2n+1} = F_{n}^2 + F_{n+1}^2$
 
 $F_{2n} = F_{n+1}^2 - F_{n-1}^2$
@@ -127,6 +134,8 @@ Let $g(n) = \sum_{d\mid n} f(d)$, then $f(n)=\sum{d\mid n} g(d) \mu\left(\frac{n
 \cppfile{math/diophantine.cpp}
 \subsection{Modular inverse}
 \cppfile{math/inversemod.cpp}
+\subsection{Lucas}
+\cppfile{math/lucas.cpp}
 \subsection{Chinese remainder theorem}
 \cppfile{math/crt.cpp}
 \subsection{Mobius}
@@ -145,6 +154,8 @@ Let $g(n) = \sum_{d\mid n} f(d)$, then $f(n)=\sum{d\mid n} g(d) \mu\left(\frac{n
 \cppfile{math/linear_rec.cpp}
 \subsection{Tonelli Shanks}
 \cppfile{math/tonelli_shanks.cpp}
+\subsection{Fraccion}
+\cppfile{math/frac.cpp}
 
 \section{Geometry}
 \subsection{Point}

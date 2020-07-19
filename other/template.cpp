@@ -1,20 +1,21 @@
 #include <bits/stdc++.h>
-#ifdef DEMETRIO
-#define deb(...) fprintf(stderr,__VA_ARGS__)
-#define deb1(x) cerr << #x << " = " << x << endl
-#else
-#define deb(...) 0
-#define deb1(x) 0
-#endif
+using namespace std;
+typedef long long int ll;
+typedef vector<ll> vi;
+typedef pair<ll,ll> ii;
+
 #define pb push_back
-#define mp make_pair
 #define fst first
 #define snd second
-#define fore(i,a,b) for(int i=a,ThxDem=b;i<ThxDem;++i)
+#define ALL(cont) cont.begin(), cont.end()
+#define mset(a,b) memset(a,b,sizeof(a));
+#define foreach(it, l) for (auto it = l.begin(); it != l.end(); it++)
+#define fore(i, a, b) for (int i = a, almo5t = b; i < almo5t; ++i)
 #define SZ(x) ((int)x.size())
-using namespace std;
-typedef long long ll;
+#define MOD 1000000007
+#define FIN ios::sync_with_stdio(false);cin.tie(0);cout.tie(0)
 
-int main(){
-	return 0;
+int main()
+{ FIN;
+    return 0;
 }
