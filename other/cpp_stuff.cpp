@@ -1,3 +1,6 @@
+//rnd
+auto rnd=bind(uniform_int_distribution<long long>(minimo,maximo), mt19937(time(0)));
+srand((unsigned)time(0));
 // double inf
 const double DINF=numeric_limits<double>::infinity();
 // Custom comparator for set/map

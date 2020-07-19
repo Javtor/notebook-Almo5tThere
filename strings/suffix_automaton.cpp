@@ -1,5 +1,5 @@
 struct state {int len,link;map<char,int> next;}; //clear next!!
-state st[100005];
+state st[100005]; //2*MAXN
 int sz,last;
 void sa_init(){
 	last=st[0].len=0;sz=1;
